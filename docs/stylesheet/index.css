@@ -1,1 +1,699 @@
 /* CSSはこのファイルに記述してください */
+body {
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323a45;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #0dc0c0;
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4,
+h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-title {
+  color: #555;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.section-title h3 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.gray-section {
+  background: #f4f4f4;
+  color: #888;
+}
+
+/*-------  ここまで共通のCSS  --------*/
+
+/*-------  ここからheader  --------*/
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 50px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.header-title {
+  float: left;
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+}
+
+.header-menu-right {
+  float: right;
+}
+
+.header-menu-right li {
+  float: left;
+}
+
+.header-menu-right a {
+  color: #323a45;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.header-menu-right a:hover {
+  color: #0dc0c0;
+  transition: color 0.3s;
+}
+
+/*-------  ここまでheader  --------*/
+
+/*-------  ここからtop content  --------*/
+.top-section {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-image: url("../images//top.jpg");
+  background-size: cover;
+}
+
+.inner-bg {
+  padding: 0;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top-description {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.top-section h2 {
+  font-family: "Dosis", sans-serif;
+  color: #f3f3f3;
+  font-size: 48px;
+  line-height: 54px;
+  margin: 10px 0 30px 0;
+  font-weight: 400;
+}
+
+.top-description p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.top-section .top-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-top-white {
+  background: rgba(250, 250, 250, 0.06);
+  border: 1px solid rgba(250, 250, 250, 0.15);
+  color: rgba(250, 250, 250, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-top-white:hover {
+  background: rgba(250, 250, 250, 0.05);
+  border: 1px solid rgba(250, 250, 250, 0.8);
+  color: #fff;
+  box-shadow: 0 0px 12px rgba(250, 250, 250, 0.15);
+}
+
+#more-text {
+  display: none;
+}
+
+/*-------  ここまでtop content  --------*/
+
+/*-------  ここからlanguages  --------*/
+.languages-section {
+  padding-bottom: 60px;
+  color: #888;
+  text-align: center;
+}
+
+.languages-box-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.languages-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 38%;
+  padding: 20px;
+}
+
+.languages-content {
+  height: 80px;
+}
+
+.languages-content p {
+  display: none;
+}
+
+/*-------  ここまでlanguages  --------*/
+
+/*-------  ここからfeatures  --------*/
+.features-section-top {
+  text-align: center;
+  height: 376px;
+}
+
+.features-section-bottom {
+  padding-top: 120px;
+}
+
+.features-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 44%;
+  margin-left: 65px;
+  margin-bottom: 60px;
+}
+
+/*-------  ここまでfeatures  --------*/
+
+/*-------  ここからpricing  --------*/
+.pricing-section {
+  padding-bottom: 50px;
+}
+
+.price-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  padding: 25px 15px 15px 15px;
+  margin: 0 1%;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+.price-column h2 {
+  color: #fff;
+  font-size: 32px;
+  background: #323a45;
+  margin-bottom: 0;
+  padding: 30px 0;
+}
+
+.price-column-green h2 {
+  background: #0dc0c0;
+}
+
+.price-column h3 {
+  color: #555;
+  background: #f0f0f0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 40px 0;
+  font-size: 30px;
+}
+
+.price-column ul {
+  padding: 30px;
+}
+
+.price-column li {
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #888;
+  font-weight: 400;
+  padding: 18px 0;
+}
+
+.btn-pricing {
+  background: #2d323a;
+  border: 1px solid #24282e;
+  color: #c9d1d6;
+}
+
+.btn-pricing:hover {
+  background: #384147;
+  border: 1px solid #32383f;
+  color: #e8edef;
+}
+
+/*-------  ここまでpricing  --------*/
+
+/*-------  ここからmodal  -------*/
+.apply-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  margin: auto;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 550px;
+  height: 500px;
+  text-align: center;
+  display: block;
+}
+
+.bi-x-lg {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#apply-form {
+  width: 100%;
+}
+
+#apply-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#apply-form input,
+#apply-form textarea,
+select {
+  width: 400px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  padding: 10px 10px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+  display: inline;
+}
+
+#apply-form textarea {
+  max-height: 100px;
+}
+
+select {
+  height: 40px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 400px;
+}
+
+/*-------  ここまでmodal  --------*/
+
+/*-------  ここからstudent  --------*/
+
+.carousel-indicators {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicators li.active {
+  background-color: #666;
+}
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  /* アイテムを中央に揃える */
+  overflow: hidden;
+  width: 100%;
+}
+
+.student-box {
+  display: none;
+  /* 初期状態では非表示 */
+  flex-direction: column;
+  /* アイテム内の要素を縦並びに */
+  align-items: center;
+  /* アイテム内の要素を中央揃えに */
+  text-align: center;
+  /* テキストを中央揃えに */
+}
+
+.student-box.active {
+  display: flex;
+  /* アクティブなアイテムのみ表示 */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#student-carousel {
+  padding-bottom: 10px;
+}
+
+.students-section {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#students .container {
+  width: 936px;
+}
+
+.student-box {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.student-image {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  padding: 0px;
+  border-radius: 50%;
+}
+
+#student-carousel img {
+  display: inline-block;
+}
+
+#student-carousel li {
+  background-color: #869791;
+}
+
+/*-------  ここまでstudent  --------*/
+
+/*-------  ここからmessage  --------*/
+.message-section {
+  color: white;
+  background: url("../images/night_view.png");
+  background-size: cover;
+  text-align: center;
+}
+
+.message-section-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 140px 0;
+}
+
+.message-section h4 {
+  color: white;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+/*-------  ここまでmessage  --------*/
+
+/*-------  ここからcolumn  --------*/
+.columns-section {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.filters-wrapper {
+  margin-bottom: 40px;
+}
+
+.filter-item {
+  background-color: #ffffff;
+  color: #323a45;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  margin: 10px 5px 0 0;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.filter-item:hover {
+  color: #fff;
+  background: #009ca8;
+}
+
+.filter-item.active {
+  background: #009ca8;
+  color: #fff;
+  cursor: default;
+}
+
+.column-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 15px 30px;
+  padding: 7px 7px 27px;
+}
+
+.column-box img {
+  width: 100%;
+}
+
+.column-image {
+  width: 100%;
+  height: 277px;
+  background-position: center;
+  background-size: 100% auto;
+  transition: all 0.3s;
+}
+
+.column-image.zoom {
+  background-size: 120% auto;
+}
+
+.zoom-black {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.column-title {
+  display: block;
+  margin-top: 17px;
+  color: #444;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn-loading {
+  background: #2d323a;
+  border: 1px solid #24282e;
+  color: #c9d1d6;
+}
+
+.btn-loading:hover {
+  background: #384147;
+  border: 1px solid #32383f;
+  color: #e8edef;
+}
+
+/*-------  ここまでcolumn  --------*/
+
+/*-------  ここからcontact  --------*/
+.contact-section {
+  background: url("../images/contact.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.contact-section-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 70px;
+}
+
+.contact-section h3,
+.contact-section h4 {
+  color: white;
+}
+
+.contact-section h4 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  margin: 0;
+  padding: 0 10px;
+  vertical-align: middle;
+  background: rgba(250, 250, 250, 0.08);
+  border: none;
+  width: 85%;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.contact-form {
+  display: inline-block;
+  vertical-align: top;
+  width: 58%;
+}
+
+.btn-contact {
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background: #0dc0c0;
+  border: 1px solid #09b1b9;
+  color: white;
+  box-shadow: inset 0 1px 0 #0fc8c8;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  margin: 10px 0;
+  padding: 15px 35px;
+}
+
+.contact-about {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.contact-about i {
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+.contact-about p {
+  margin: 0 0 24px;
+  line-height: 24px;
+}
+
+.error-message {
+  color: #f51414;
+  height: 20px;
+}
+
+/*-------  ここまでcontact  --------*/
+
+/*-------  ここからsocial  --------*/
+.social-section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.social-section h3 {
+  font-weight: 300;
+}
+
+.social-icon {
+  text-align: center;
+  font-size: 36px;
+  line-height: 76px;
+  color: #323a45;
+  padding: 5px;
+  transition: all 0.3s;
+}
+
+/*-------  ここまでsocial  --------*/
+
+/*-------  ここからfooter  --------*/
+footer {
+  text-align: center;
+  padding: 39px 0 36px;
+  background: #222;
+  color: #999;
+}
+
+/*-------  ここまでfooter  --------*/
