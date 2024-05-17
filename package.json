@@ -1,0 +1,23 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "server": "http-server",
+    "start": "http-server docs/ -p 5555",
+    "test": "node --test __tests__/*.test.js"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "puppeteer": "^19.11.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.33.3"
+  }
+}
